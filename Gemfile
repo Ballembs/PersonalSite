@@ -34,6 +34,9 @@ gem "twitter-bootstrap-rails"
 
 #image plugin
 gem "paperclip", "~> 4.2"
+
+gem 'rails_12factor', group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,3 +48,4 @@ gem "paperclip", "~> 4.2"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+ruby "2.1.3"
