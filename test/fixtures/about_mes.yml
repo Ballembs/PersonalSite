@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dob: MyString
+  native: MyText
+  schooling: MyText
+  colege: MyText
+  batchelers: MyText
+
+two:
+  name: MyString
+  dob: MyString
+  native: MyText
+  schooling: MyText
+  colege: MyText
+  batchelers: MyText
