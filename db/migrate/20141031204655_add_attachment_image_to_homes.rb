@@ -1,8 +1,6 @@
 class AddAttachmentImageToHomes < ActiveRecord::Migration
   def self.up
-    change_table :homes do |t|
-      t.attachment :image
-    end
+    add_attachment :homes, :image
   end
 
   def self.down

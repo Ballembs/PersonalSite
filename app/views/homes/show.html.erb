@@ -1,17 +1,15 @@
 <%- model_class = Home -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+  <h1>Balasubrahmanyam, </h1><h3>Software engineer</h3>
 </div>
 
-<div class="leftClass">
-  <dl class="dl-horizontal">
-    <dt><strong><%= model_class.human_attribute_name(:about_me) %>:</strong></dt>
-
+<div class="">
+  <dl class="">
     <dd><%= @home.about_me %></dd>
   </dl>
 </div>
 <div>
-  <dl class="dl-horizontal">
+  <dl class="">
     <dd><%= image_tag @home.image.url(:medium) %></dd>
   </dl>
 </div>
