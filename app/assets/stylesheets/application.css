@@ -15,7 +15,7 @@
  */
 
 .headImage {
-  background: url('/assets/HomeImage.jpg');
+  background-image:url('<%= asset_path("HomeImage.jpg") %> ');
   height: 150px;
   margin-left: auto;
   margin-right: auto;
