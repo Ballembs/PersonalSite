@@ -1,14 +1,12 @@
 <%- model_class = Home -%>
-<div class="page-header">
-  <h1>Balasubrahmanyam, </h1><h3>Software engineer</h3>
-</div>
-
 <div class="page-content">
   <dl class="content-left">
-    <dd><%= @home.about_me %></dd>
+    <dd><%= image_tag @home.image.url %></dd>
+
   </dl>
   <dl class="content-right">
-    <dd><%= image_tag @home.image.url(:medium) %></dd>
+    <h1>Inside Balu 30 seconds</h1>
+    <dd><%= @home.about_me %></dd>
   </dl>
 </div>
 <%= link_to t('.back', :default => t("helpers.links.back")),
