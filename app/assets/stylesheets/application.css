@@ -14,8 +14,6 @@
  *= require_self
  */
 
- /*.headImage { background: url(<%= asset_data_uri 'HomeImage.jpg' %>)  }*/
-
 .headImage {
   height: 150px;
   margin-left: auto;
