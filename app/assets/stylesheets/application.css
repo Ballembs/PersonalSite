@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+.headImage {
+  background: url('/assets/HomeImage.jpg');
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: currentcolor;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 70%;
+
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  margin-top: 100px;
+  font-size: xx-large;
+}
+
+.navbar-nav {
+  float: right;
+  color: whitesmoke;
+  margin-top: 100px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: whitesmoke;
+}
