@@ -27,6 +27,7 @@
     <%= f.label :about_me, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_area :about_me, :class => 'form-control' %>
+      <%= f.text_area :about_me, :class => 'ckeditor' %>
     </div>
     <%= error_span(@home[:about_me]) %>
   </div>

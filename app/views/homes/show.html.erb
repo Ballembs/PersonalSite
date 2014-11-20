@@ -6,7 +6,7 @@
   </dl>
   <dl class="content-right">
     <h1>Inside Balu 30 seconds</h1>
-    <dd><%= @home.about_me %></dd>
+    <dd><%= raw@home.about_me %></dd>
   </dl>
 </div>
 <%= link_to t('.back', :default => t("helpers.links.back")),

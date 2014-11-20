@@ -36,5 +36,6 @@ gem "twitter-bootstrap-rails"
 gem "paperclip", "~> 4.2"
 
 gem 'rails_12factor', group: :production
+gem 'ckeditor_rails'
 
 ruby "2.1.3"
