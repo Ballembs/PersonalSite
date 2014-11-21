@@ -5,13 +5,21 @@
 
   </dl>
   <dl>
-    <h1>Balu In 30 Seconds</h1>
-    <dd><%= raw@home.about_me %></dd>
     <dd>
+      <p class="subhead">Balu In 30 Seconds</p>
+      <%= raw@home.about_me %>
       <div class="proficon content-right">Resume</div>
-      <div class="proficon content-right middleicon">Projects</div>
-      <div class="proficon content-right lasticon">Skils</div>
+      <div class="proficon middleicon content-right">Projects</div>
+      <div class="proficon lasticon content-right">Skils</div>
+      <%= link_to t('.back', :default => t("helpers.links.back")),
+      homes_path, :class => 'btn btn-default'  %>
+      <%= link_to t('.edit', :default => t("helpers.links.edit")),
+      edit_home_path(@home), :class => 'btn btn-default' %>
+      <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+      home_path(@home),
+      :method => 'delete',
+      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+      :class => 'btn btn-danger' %>
     </dd>
-    
   </dl>
 </div>
