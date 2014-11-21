@@ -1,16 +1,16 @@
 <%- model_class = Home -%>
 <div class="page-content">
-  <dl class="content-left MyImage">
+  <dl class="content-right MyImage">
     <dd><%= image_tag @home.image.url %></dd>
 
   </dl>
-  <dl class="content-right">
+  <dl>
     <h1>Balu In 30 Seconds</h1>
     <dd><%= raw@home.about_me %></dd>
     <dd>
-      <div class="proficon content-left">Resume</div>
-      <div class="proficon content-left middleicon">Projects</div>
-      <div class="proficon content-left lasticon">Skils</div>
+      <div class="proficon content-right">Resume</div>
+      <div class="proficon content-right middleicon">Projects</div>
+      <div class="proficon content-right lasticon">Skils</div>
     </dd>
   </dl>
 </div>
