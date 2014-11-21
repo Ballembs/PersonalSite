@@ -48,38 +48,58 @@
             <li><%= link_to "Biography", "/path2"  %></li>
             <li><%= link_to "Contact Me", "/path3"  %></li>
           </ul>
+          <p class="navbar-text pull-right nav navbar-nav">
+            <% if user_signed_in? %>
+            Logged in as <strong><%= current_user.email %></strong>.
+            <%= link_to 'Edit profile', edit_user_registration_path %> |
+            <%= link_to "Logout", destroy_user_session_path, method: :delete%>
+            <% else %>
+            <%= link_to "Sign up", new_user_registration_path  %> |
+            <%= link_to "Login", new_user_session_path  %>
+            <% end %>
+          </p>
         </div>
       </div>
     </div>
 
     <div class="container">
-          <%= bootstrap_flash %>
-          <%= yield %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= bootstrap_flash %>
+      <%= yield %>
     </div>
 
     <footer>
-      <div>
-      <div class="footerContact left"> Call me!<br>
-      9035085083</div>
-      <div class="footerContact left"> Mail me!<br>
-      bsb.balu@gmail.com</div>
-      <div id="share-buttons" class="">
+        <div>
+          <i class="fa fa-phone fa-2x left"></i>
+          <div class="footerContact left">Call me!<br> 9035085083</div>
+        </div>
+        <div>
+          <i class="fa fa-envelope-o fa-2x left"></i>
+          <div class="footerContact left"> Mail me!<br>bsb.balu@gmail.com</div>
+        </div>
+        <div>
           <!-- Facebook -->
-          <a  class="footerContact" href="https://www.facebook.com/BBSManyam" target="_blank"><img class="sociallinks" src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-
+          <i class="fa fa-facebook-square fa-2x left"></i>
+          <a  class="footerContact left" href="https://www.facebook.com/BBSManyam" target="_blank">Facebook</a>
+        </div>
           <!-- Twitter -->
-          <a class="footerContact" href="https://twitter.com/BallemBs" target="_blank"><img class="sociallinks" src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+        <div>
+          <i class="fa fa-twitter-square fa-2x left"></i>
+          <a class="footerContact left" href="https://twitter.com/BallemBs" target="_blank">Twitter</a>
+        </div>
 
           <!-- Google+ -->
-          <a class="footerContact" href="https://plus.google.com/u/0/104795829501543191864/posts" target="_blank"><img class="sociallinks" src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
-
+          <div>
+            <i class="fa fa-google-plus-square fa-2x left"></i>
+            <a class="footerContact left" href="https://plus.google.com/u/0/104795829501543191864/posts" target="_blank">Google+</a>
+          </div>
           <!-- LinkedIn -->
-          <a class="footerContact" href="https://www.linkedin.com/profile/view?id=119718835&trk=nav_responsive_tab_profile" target="_blank"><img class="sociallinks" src="http://www.simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
-
-      </div>
-    </div>
+          <div>
+            <i class="fa fa-linkedin-square fa-2x left"></i>
+            <a class="footerContact left" href="https://www.linkedin.com/profile/view?id=119718835&trk=nav_responsive_tab_profile" target="_blank">LinkedIn</a>
+          </div>
     </footer>
-
 
   </body>
 </html>

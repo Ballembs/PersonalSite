@@ -37,6 +37,7 @@ body{
 .container {
   position: relative;
   margin-bottom: 15px;
+  box-shadow: 0px 1px 0px;
 }
 
 .navbar-default .navbar-brand {
@@ -63,7 +64,7 @@ body{
 }
 
 footer {
-  width: auto;
+  width: 1016px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -91,4 +92,8 @@ footer {
 .myname{
   font-size: inherit;
   text-shadow: 6px 4px 6px black;
+}
+
+.navbar-text{
+  color: white;
 }
