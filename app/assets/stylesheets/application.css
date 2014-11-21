@@ -31,7 +31,7 @@ body{
 }
 
 .subtitle{
-  margin: 10px;
+  margin: 20px;
   font-size: medium;
 }
 .container {
@@ -86,4 +86,9 @@ footer {
 
 .right{
   float: right;
+}
+
+.myname{
+  font-size: inherit;
+  text-shadow: 6px 4px 6px black;
 }
