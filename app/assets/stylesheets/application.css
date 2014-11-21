@@ -33,7 +33,6 @@ body{
 .subtitle{
   margin: 10px;
   font-size: medium;
-  margin: 14px 5px 0px 94px;
 }
 .container {
   position: relative;
@@ -70,14 +69,6 @@ footer {
   padding-left: 15px;
   box-shadow: 0px 0px 1px black;
 
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
 }
 
 .footerContact{
