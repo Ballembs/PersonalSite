@@ -7,10 +7,14 @@
   <dl>
     <dd>
       <p class="subhead">Balu In 30 Seconds</p>
+
       <%= raw@home.about_me %>
-      <div class="proficon content-right">Resume</div>
-      <div class="proficon middleicon content-right">Projects</div>
-      <div class="proficon lasticon content-right">Skils</div>
+
+      <div class="right">
+        <div class="proficon left">Resume</div>
+        <div class="proficon middleicon left">Projects</div>
+        <div class="proficon lasticon left">Skils</div>
+      </div>
       <%= link_to t('.back', :default => t("helpers.links.back")),
       homes_path, :class => 'btn btn-default'  %>
       <%= link_to t('.edit', :default => t("helpers.links.edit")),
