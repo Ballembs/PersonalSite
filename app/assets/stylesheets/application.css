@@ -17,6 +17,7 @@
 body{
   margin: 0;
   color: #599;
+  padding: 1.3em;
   /*background-image: url(http://subtlepatterns.com/patterns/type.png); background-position: initial initial; background-repeat: initial initial;*/
 }
 
@@ -37,7 +38,6 @@ body{
 }
 .container {
   position: relative;
-  margin: 10%;
   width: 70%;
   margin-bottom: 15px;
 }
@@ -45,9 +45,10 @@ body{
 .navbar-default .navbar-brand {
   font-family: Noticia Text;
   color: whitesmoke;
-  margin: 1% 5% 0% 5%;
   font-size: xx-large;
-  font-size: -webkit-xxx-large;
+  box-shadow: 60px 51px 100px black;
+  width: 100%;
+  border-radius: 16%;
 }
 
 .navbar-nav {
