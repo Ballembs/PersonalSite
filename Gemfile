@@ -37,5 +37,5 @@ gem "paperclip", "~> 4.2"
 
 gem 'rails_12factor', group: :production
 gem 'ckeditor_rails'
-
+gem 'font-awesome-sass'
 ruby "2.1.3"

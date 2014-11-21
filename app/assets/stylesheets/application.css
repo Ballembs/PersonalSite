@@ -11,34 +11,32 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require font-awesome
  *= require_self
  */
 body{
   margin: 0;
-  padding: 1em;
   color: darkgray;
-  background-image: url(http://subtlepatterns.com/patterns/type.png); background-position: initial initial; background-repeat: initial initial;
+  /*background-image: url(http://subtlepatterns.com/patterns/type.png); background-position: initial initial; background-repeat: initial initial;*/
 }
 
 .headImage {
-  background-image: url("HomeImage.jpg");
+  /*background-image: url("HomeImage.jpg");*/
   margin-left: auto;
   margin-right: auto;
-  background-color: transparent;
+  background-color: #1fa67a;
   box-shadow: 0px 0px 5px black;
-  width: 70%;
 }
 
 .container {
   width: 70%;
-  box-shadow: 0px 0px 1px black;
   margin-bottom: 15px;
 }
 
 .navbar-default .navbar-brand {
   font-family: Noticia Text;
   color: whitesmoke;
-  margin-top: 3%;
+  margin: 3% 5% 0% 5%;
   font-size: xx-large;
   font-size: -webkit-xxx-large;
 }
@@ -77,4 +75,9 @@ footer {
 
 .footerContact{
   padding: 10px;
+}
+
+.sociallinks{
+  padding: 10px;
+  width: 50px;
 }
