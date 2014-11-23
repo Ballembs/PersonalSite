@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <title>Balu</title>
     <%= csrf_meta_tags %>
 
@@ -41,11 +42,11 @@
 
     <div class="navbar navbar-default navbar-static-top headImage">
       <div class="headContainer">
-        <a class="navbar-brand" href="#"><p class="myname">Bala Subrahmanyam</p><p class="subtitle">"I am [Dotnet] & #{Rails} Developer"</p></a>
+        <a class="navbar-brand" href="WhatAmI/7"><p class="myname">Bala Subrahmanyam</p><p class="subtitle">"I am [Dotnet] & #{Rails} Developer"</p></a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Home", "/path1"  %></li>
-            <li><%= link_to "Biography", "/path2"  %></li>
+            <li><%= link_to "Home", "/WhatAmI/7"  %></li>
+            <li><%= link_to "Biography", "/stories"  %></li>
             <li><%= link_to "Contact Me", "/path3"  %></li>
           </ul>
           <p class="navbar-text pull-right nav navbar-nav">
@@ -63,8 +64,6 @@
     </div>
 
     <div class="container">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
       <%= bootstrap_flash %>
       <%= yield %>
     </div>
@@ -72,11 +71,11 @@
     <footer>
         <div>
           <i class="fa fa-phone fa-2x left"></i>
-          <div class="footerContact left">Call me!<br> 9035085083</div>
+          <div class="footerContact left">+91-9035085083</div>
         </div>
         <div>
           <i class="fa fa-envelope-o fa-2x left"></i>
-          <div class="footerContact left"> Mail me!<br>bsb.balu@gmail.com</div>
+          <div class="footerContact left">bsb.balu@gmail.com</div>
         </div>
         <div>
           <!-- Facebook -->

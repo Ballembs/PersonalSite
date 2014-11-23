@@ -97,3 +97,8 @@ footer {
 .navbar-text{
   color: white;
 }
+
+a:hover {
+  color: #fff;
+  background-color: none;
+}
