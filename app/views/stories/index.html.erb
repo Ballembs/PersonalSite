@@ -1,0 +1,28 @@
+<%- model_class = Story -%>
+<div class="page-header subhead">
+  <h3>Drops in My Ocean</h1>
+</div>
+<Div class="bioclass">
+  <% @stories.each do |story| %>
+    <dl class=''>
+      <dd class="storytitle">
+        <%= story.title.capitalize %>
+      </dd>
+      <dd class="storycontent">
+        <%= raw(story.content) %>
+      </dd>
+      <dd>
+        <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                    edit_story_path(story), :class => 'btn btn-default btn-xs' %>
+        <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                    story_path(story),
+                    :method => :delete,
+                    :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                    :class => 'btn btn-xs btn-danger' %>
+        <%= link_to t('.new', :default => t("helpers.links.new")),
+                    new_story_path,
+                    :class => 'btn btn-primary' %>
+      </dd>
+    </dl>
+  <% end %>
+</div>
